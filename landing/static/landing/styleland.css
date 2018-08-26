@@ -1,0 +1,139 @@
+.{
+box-sizing: border-box;
+} 
+body{
+	color: black;
+	font-size: 30px;
+	
+}
+
+@media (min-width: 1024px) {
+	.container{
+	display: grid;
+	grid-template-rows:40px 70px 40px 5px 400px 100px 300px auto 10px ;
+	grid-template-columns:
+			1fr    1fr     1fr     1fr       1fr      1fr      1fr        1fr    1fr    1fr; 
+	grid-template-areas:
+			"headr  headr    headr   headr     headr     headr     headr       headr   headr   headr"
+			"heady  heady    heady   heady     heady     heady     heady       heady   heady   heady"
+			"headr2 headr2   headr2  headrb    headrb    headr3    headr3      headr3  headr3  headr3"
+			".      .        .       .         .         .         .           .       .       ."
+			".      sidel    sidel   content   content   content   content     sider   sider   ."
+			".      sidel    sidel   content   content   content   content     .       .       ."
+			".      sidel    sidel   content   content   content   content     .       .       ."
+			".      .        .       content   content   content   content     .       .       ."
+			".      .        .       .         .         .         .           .       .       ."
+
+	
+	}
+}
+@media (min-width: 640px) and (max-width: 1024px) {
+ 	.container{
+	display: grid;
+	grid-template-rows:40px 70px 40px 5px 400px 100px 300px auto 10px ;
+	grid-template-columns:
+			1fr       1fr     1fr       1fr       1fr       1fr         1fr     1fr     ; 
+	grid-template-areas:
+			"headr    headr   headr     headr     headr     headr       headr   headr   "
+			"heady    heady   heady     heady     heady     heady       heady   heady   "
+			"headr2   headr2  headrb    headrb    headr3    headr3      headr3  headr3  "
+			".        .       .         .         .         .           .       .       "
+			"sidel    sidel   content   content   content   content     sider   sider   "
+			"sidel    sidel   content   content   content   content     .       .       "
+			"sidel    sidel   content   content   content   content     .       .       "
+			".        .       content   content   content   content     .       .       "
+			".        .       .         .         .         .           .       .       "
+	} 
+}	
+@media (max-width: 640px) {
+	.hedr1{min-height:40px}
+	.hedr2{min-height:5px}
+	.hedr3{min-height:5px}
+	.hedy{min-height:70px}
+	.hedrb{min-height:32px}
+	.btn{
+		margin-bottom:0px;
+		
+	}
+	.cont{min-height:500px}
+	.sideleft{
+		min-height:300px;
+		margin-bottom:4px;}
+	.sideright{
+		min-height:700px;
+		margin-top:4px;
+	}
+}
+.but{
+	
+	margin-left: 4px;
+	margin-right: 4px;
+	margin-top:2px;
+	background: #FFF00A;
+	color: blue;
+	text-align: center;
+	border-radius:10px;
+}
+ 
+
+.hedr1{
+	
+	background: #DD0007;
+	grid-area: headr;
+	padding-left: 5px;
+
+	
+}
+.hedr2{
+	
+	background: #DD0007;
+	grid-area: headr2;
+
+	
+}
+.hedr3{
+	
+	background: #DD0007;
+	grid-area: headr3;
+
+	
+}
+.hedrb{
+	
+	background: #DD0007;
+	grid-area: headrb;
+
+	
+}
+.hedy{
+	
+	background: #FFF00A;
+	grid-area: heady;
+	padding-left: 5px;
+
+	
+}
+.cont {
+	background: #ffffff;
+	grid-area: content;
+	color: black;
+	padding-left: 5px;
+	
+}
+
+
+.sideleft{
+	background: #DD0007;
+	grid-area: sidel;
+}
+
+.sideright{
+	background: #DD0007;
+	grid-area: sider;
+	padding-left: 5px;
+}
+.in_foot{
+	background: #DD0007;
+	height: 100px;
+	padding-left: 5px;
+	} 
