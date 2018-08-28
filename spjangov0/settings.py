@@ -21,8 +21,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = 'np6=-*j8bs!8w6v4sn1(41-t&^k@ik3fx=3=quvq)t$s&e-blg'
-import os
-SECRET_KEY = os.eviron.get('DJANGO_SECRET_KEY', 'np6=-*j8bs!8w6v4sn1(41-t&^k@ik3fx=3=quvq)t$s&e-blg')
+
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'np6=-*j8bs!8w6v4sn1(41-t&^k@ik3fx=3=quvq)t$s&e-blg')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
